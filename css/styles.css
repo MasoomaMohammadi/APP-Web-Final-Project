@@ -522,6 +522,13 @@ body {
   border-bottom: 1px solid #fff;
 }
 
+ion-icon{
+  width:24px;
+  height:24px;
+  color:#bFA979;
+  background-color:#eeee;
+}
+
 .footer .h4 {
   margin-top: 3rem;
   text-align: center;
