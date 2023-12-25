@@ -523,10 +523,9 @@ body {
 }
 
 ion-icon{
-  width:24px;
-  height:24px;
+  width:28px;
+  height:28px;
   color:#bFA979;
-  background-color:#eeee;
 }
 
 .footer .h4 {
@@ -535,7 +534,7 @@ ion-icon{
   color: #eeee;
 }
 hr {
-  margin: auto 32rem;
+  margin: auto 30rem;
   color: #bfa979;
 }
 
