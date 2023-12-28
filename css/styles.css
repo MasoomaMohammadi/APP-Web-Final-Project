@@ -5,7 +5,11 @@ body {
   padding: 0;
   background-color: #eeee;
   font-family: "Rubik", sans-serif;
-  width:100%;
+  width: 100%;
+}
+
+*{
+   box-sizing:border-box; 
 }
 
 .nav {
@@ -17,7 +21,6 @@ body {
   width: 100%;
   overflow: hidden;
   z-index: 2;
-  /* margin-top:-50px; */
 }
 
 .logo img {
@@ -53,8 +56,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-  margin-top: -100px;
+  height: 100%;
+  width:100%;
+  margin-top: -100px; 
 }
 
 .home-text {
@@ -63,6 +67,7 @@ body {
   color: #eeee;
   margin-top: 100px;
   padding-top: 80px;
+  padding-bottom:100px;
 }
 .home-text h1 {
   font-size: 100px;
@@ -142,19 +147,19 @@ body {
 .sightseeing-text {
   position: absolute;
   background-color: #bfa979;
-  width: 300px;
-  height: 280px;
-  bottom: 10%;
+  width: 55%;
+  height: 50%;
+  bottom: 6%;
   padding: 20px;
   border-radius: 5px;
   text-align: start;
-  left: 15%;
+  left: 18%;
   z-index: 1;
 }
 
 .sightseeing-text h1 {
   color: #208022;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .sightseeing-text p {
@@ -166,12 +171,9 @@ body {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap:4rem;
   text-align: center;
   justify-content: center;
-}
-
-.Kabul-img {
-  margin-right: 3.5rem;
 }
 
 .Kabul-img p {
@@ -179,7 +181,7 @@ body {
 }
 
 .Kabul-img p {
-  width: 40%;
+  width: 45%;
   margin: auto;
   padding: 2rem;
 }
@@ -326,7 +328,6 @@ body {
   gap: 5rem;
 }
 
-
 .box {
   box-shadow: 1px 1px 5px 0px gray;
   background-color: #eee;
@@ -337,7 +338,7 @@ body {
 }
 
 .box:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .box p {
@@ -483,7 +484,15 @@ body {
 
 .info-clothes {
   text-align: center;
-  margin-right: 8rem;
+  margin-right: 6rem;
+}
+
+.info-clothes ion-icon{
+  background-color:#eeee;
+  border-top: 3px solid #bfa979;
+  border-bottom: 3px solid #bfa979;
+  padding:8px 50px;
+  margin-top:24px;
 }
 
 .info-clothes p {
@@ -502,7 +511,7 @@ body {
   margin-top: 6rem;
   padding: 0.5rem;
   background-color: #208022;
-  width:100%;
+  width: 100%;
 }
 
 .pages-footer {
@@ -522,10 +531,10 @@ body {
   border-bottom: 1px solid #fff;
 }
 
-ion-icon{
-  width:28px;
-  height:28px;
-  color:#bFA979;
+ion-icon {
+  width: 28px;
+  height: 28px;
+  color: #bfa979;
 }
 
 .footer .h4 {
@@ -534,7 +543,7 @@ ion-icon{
   color: #eeee;
 }
 hr {
-  margin: auto 30rem;
+  margin: auto 28rem;
   color: #bfa979;
 }
 
@@ -544,4 +553,3 @@ hr {
   align-items: center;
   gap: 1rem;
 }
-
