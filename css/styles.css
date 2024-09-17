@@ -12,7 +12,78 @@ body {
    box-sizing:border-box; 
 }
 
+nav {
+  height: 80px;
+  margin: auto;
+  background-color: #208022;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
 
+nav ul{
+  float: right;
+  margin-right: 20px;
+  /* padding-bottom: 30px; */
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 8px;
+  margin-top: -16px;
+}
+
+nav ul li a{
+  color: #ffff;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+nav ul li a:active,
+a:hover {
+  background-color: #fff;
+  color: #208022;
+  transition: .5s;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+  cursor: pointer;
+  line-height: 80px;
+margin-top: 8px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right:40px ;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.container-nav {
+  background-image: url(../images/bamyn-fit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  width:100%;
+  margin-top: -100px; 
+}
 
 .home-text {
   align-items: center;
@@ -528,3 +599,72 @@ hr {
 }
 
 /* responsive */
+@media (max-width: 1024px){
+
+  /* .container-nav {
+  background-image: url(../images/bamyn-fit.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100%;
+  width:100%;
+  margin-top: -100px; 
+} */
+
+/* 
+  .home-text h1 {
+  font-size: 150px;
+  margin-bottom: -10px;
+}
+
+.home-text h2 {
+  font-size: 28px;
+}
+
+.home-text p {
+  font-size: 20px;
+} */
+
+}
+
+@media (max-width: 952px){
+  .logo{
+    margin-left: 10px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  
+}
+
+@media (max-width: 858px) {
+.checkbtn{
+  display: block;
+}
+ul{
+  position: fixed;
+  height: 100vh;
+  top: 64px;
+  left: -100%;
+  transition: all .5s;
+  background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(219, 12, 12, 0.9472163865546218) 35%, rgba(22, 136, 20, 1) 100%);
+    opacity: 80%;
+    text-align: center;
+    
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+a:hover, a:active{
+  background: none;
+  color: #208022;
+}
+#check:checked ~ ul{
+  left: 0;
+  right: -20px;
+}
+}
