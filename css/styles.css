@@ -12,9 +12,8 @@ body {
    box-sizing:border-box; 
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
+nav {
+  height: 80px;
   margin: auto;
   background-color: #208022;
   position: fixed;
@@ -23,38 +22,63 @@ body {
   z-index: 2;
 }
 
-.logo img {
+nav ul{
+  float: right;
+  margin-right: 20px;
+  /* padding-bottom: 30px; */
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 8px;
+  margin-top: -16px;
+}
+
+nav ul li a{
+  color: #ffff;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+nav ul li a:active,
+a:hover {
+  background-color: #fff;
+  color: #208022;
+  transition: .5s;
+}
+
+.logo {
   width: 60px;
   height: 60px;
   margin-left: 30px;
   cursor: pointer;
+  line-height: 80px;
+margin-top: 8px;
 }
 
-.pages {
-  /* position:absolute; */
-  margin-right: 30px;
-  display: flex;
-  gap: 28px;
-  align-items: center;
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right:40px ;
+  cursor: pointer;
+  display: none;
 }
 
-.pages a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-  padding: 6px 10px;
-  border-radius: 5px;
-}
-
-.pages a:hover {
-  background-color: #fff;
-  color: #208022;
+#check{
+  display: none;
 }
 
 .container-nav {
-  background-image: url(../images/bg-00.jpg);
+  background-image: url(../images/bamyn-fit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-position: center;
   height: 100%;
   width:100%;
@@ -64,7 +88,7 @@ body {
 .home-text {
   align-items: center;
   text-align: center;
-  color: #eeee;
+  color: #ffff;
   margin-top: 100px;
   padding-top: 80px;
   padding-bottom:100px;
@@ -96,13 +120,13 @@ body {
   font-size: 18px;
   border: 2px solid #208022;
   text-decoration: none;
-  color: #eeee;
+  color: #ffff;
 }
 
 .button:hover {
   background-color: #fff;
   color: #208022;
-  /* transform: scale(-0.5); */
+  transition: .5s;
 }
 
 .button-2 {
@@ -163,7 +187,7 @@ body {
 }
 
 .sightseeing-text p {
-  color: #eeee;
+  color: #ffff;
   font-size: 18px;
 }
 
@@ -201,10 +225,12 @@ body {
 
 .bamyn-img:hover img {
   opacity: 0.5;
+    transition: .5s;
 }
 
 .bamyn-img:hover h1 {
   display: block;
+    transition: .5s;
 }
 
 .noristan-hover {
@@ -222,6 +248,7 @@ body {
 
 .noristan-hover:hover img {
   opacity: 0.5;
+    transition: .5s;
 }
 
 .noristan-hover:hover h1 {
@@ -234,6 +261,7 @@ body {
 
 .img-hover img:hover {
   opacity: 0.5;
+    transition: .5s;
 }
 
 .img-hover h1 {
@@ -265,6 +293,7 @@ body {
 
 .herat-hover:hover img {
   opacity: 0.5;
+  transition: .5s;
 }
 
 .herat-hover h1 {
@@ -305,10 +334,14 @@ body {
 
 #foods h1 {
   color: #208022;
+  /* border-bottom: 1px solid #208022;
+  padding: 10 100px; */
 }
 
 #foods img {
   border: 1px solid #208022;
+  width:90% ;
+  height: 50%;
 }
 
 .title-foods {
@@ -331,7 +364,7 @@ body {
 .box {
   box-shadow: 1px 1px 5px 0px gray;
   background-color: #eee;
-  padding: 3rem 2.5rem;
+  padding: 2.5rem 2rem;
   border-radius: 5px;
   border: 2px solid #208022;
   sition: transform 2s linear;
@@ -339,6 +372,7 @@ body {
 
 .box:hover {
   transform: scale(1.1);
+  transition: .5s;
 }
 
 .box p {
@@ -406,6 +440,7 @@ body {
 
 .shall-hover:hover img {
   opacity: 0.5;
+  transition: .5s;
 }
 
 .shall-hover:hover h1 {
@@ -428,6 +463,7 @@ body {
 
 .gnad-hover:hover img {
   opacity: 0.5;
+  transition: .5s;
 }
 
 .gnad-hover:hover h1 {
@@ -449,6 +485,7 @@ body {
 
 .dowdamona-hover:hover img {
   opacity: 0.5;
+  transition: .5s;
 }
 
 .dowdamona-hover:hover h1 {
@@ -470,6 +507,7 @@ body {
 
 .golnigar-hover:hover img {
   opacity: 0.5;
+  transition: .5s;
 }
 
 .golnigar-hover:hover h1 {
@@ -512,6 +550,7 @@ body {
   padding: 0.5rem;
   background-color: #208022;
   width: 100%;
+  background-size:100% 100%;
 }
 
 .pages-footer {
@@ -520,15 +559,20 @@ body {
 }
 
 .pages-footer a {
+  color: #ffff;
+  font-size: 17px;
+  text-transform: uppercase;
   text-decoration: none;
-  color: #eee;
+  padding: 7px 13px;
+  border-radius: 3px;
   margin-top: 1.5rem;
-  font-size: 18px;
 }
 
-.pages-footer a:hover {
-  color: #fff;
-  border-bottom: 1px solid #fff;
+.pages-footer a:active,
+a:hover {
+  background-color: #fff;
+  color: #208022;
+  transition: .5s;
 }
 
 ion-icon {
@@ -540,7 +584,7 @@ ion-icon {
 .footer .h4 {
   margin-top: 3rem;
   text-align: center;
-  color: #eeee;
+  color: #fff;
 }
 hr {
   margin: auto 28rem;
@@ -552,4 +596,75 @@ hr {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+/* responsive */
+@media (max-width: 1024px){
+
+  .container-nav {
+  background-image: url(../images/bamyn-fit.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  height: 100%;
+  width:100%;
+  /* margin-top: -100px;  */
+}
+
+/* 
+  .home-text h1 {
+  font-size: 150px;
+  margin-bottom: -10px;
+}
+
+.home-text h2 {
+  font-size: 28px;
+}
+
+.home-text p {
+  font-size: 20px;
+} */
+
+}
+
+@media (max-width: 952px){
+  .logo{
+    margin-left: 10px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+
+  
+}
+
+@media (max-width: 858px) {
+.checkbtn{
+  display: block;
+}
+ul{
+  position: fixed;
+  height: 100vh;
+  top: 64px;
+  left: -100%;
+  transition: all .5s;
+  background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(219, 12, 12, 0.9472163865546218) 35%, rgba(22, 136, 20, 1) 100%);
+    opacity: 80%;
+    text-align: center;
+    
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+a:hover, a:active{
+  background: none;
+  color: #208022;
+}
+#check:checked ~ ul{
+  left: 0;
+  right: -20px;
+}
 }
